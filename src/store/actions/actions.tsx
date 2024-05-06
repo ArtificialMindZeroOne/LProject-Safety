@@ -1,0 +1,15 @@
+export const OPEN_POPUP = 'OPEN_POPUP';
+export const OPEN_POPUP_IMG = 'OPEN_POPUP_IMG';
+export const CLOSE_POPUP = 'CLOSE_POPUP';
+export const ADD_CARDS = 'ADD_CARDS';
+export const CHANGE_LOADER = 'CHANGE_LOADER';
+export const DELETE_CARD = 'DELETE_CARD';
+export const ADD_CARD = 'ADD_CARD';
+export const CHANGE_MY_LIKE = 'CHANGE_MY_LIKE';
+export const IMG_LINK_MODAL = 'IMG_LINK_MODAL';
+export const IMG_TITLE_MODAL = 'IMG_TITLE_MODAL';
+export const SET_AVATAR_LINK = 'SET_AVATAR_LINK';
+export const SET_TITEL = 'SET_TITEL';
+export const SET_ABOUT = 'SET_ABOUT';
+export const ABOUT_MODAL_OPEN = 'ABOUT_MODAL_OPEN';
+export const AVATAR_MODAL_OPEN = 'AVATAR_MODAL_OPEN';

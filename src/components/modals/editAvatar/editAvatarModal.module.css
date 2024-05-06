@@ -1,0 +1,181 @@
+.popup {
+  transition: 0.5s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: -1;
+}
+
+.popup_visible {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.popup_main {
+  background-color: white;
+  width: 450px;
+  min-height: 300px;
+  height: fit-content;
+  border-radius: 5px;
+  position: relative;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup_background {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.closeBtnImgBlock {
+  position: relative;
+}
+
+.closeBtnImg {
+  position: absolute;
+  top: -200px;
+  right: -50px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.closeBtnImg:hover {
+  opacity: 0.6;
+}
+
+.popup_main_form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form_input {
+  border: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 16.94px;
+  margin: 29px auto 0;
+  outline: none;
+  width: 358px;
+  color: black;
+  background-color: white;
+}
+
+.add_card_sbm_btn {
+  align-items: center;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  height: 50px;
+  justify-content: center;
+  line-height: 21.78px;
+  margin: 51px auto 37px;
+  padding: 0;
+  transition: 0.5s ease-in-out;
+  width: 358px;
+  opacity: 0.2;
+  background-color: white;
+  color: black;
+  border: 1px solid;
+  pointer-events: none;
+}
+
+.add_card_sbm_btn:hover {
+  opacity: 0.6;
+}
+
+.add_card_sbm_btn_disabled {
+  opacity: 1;
+  pointer-events: all;
+  background-color: black;
+  color: white;
+}
+
+.validationName,
+.validationAbout {
+  color: red;
+  width: 358px;
+  font-size: 12px;
+}
+
+.form_input_error {
+  border-bottom: 1px solid red;
+}
+
+@media screen and (max-width: 715px) {
+  .popup_main {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .popup_main {
+    max-width: 300px;
+  }
+
+  .closeBtnImg {
+    top: -280px;
+    right: -5px;
+  }
+
+  .form_input {
+    width: 250px;
+  }
+
+  .add_card_sbm_btn {
+    width: 250px;
+  }
+
+  .validationName,
+  .validationAbout {
+    color: red;
+    width: 250px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-height: 530px) {
+  .popup_main {
+    min-height: 200px;
+    width: 450px;
+  }
+
+  .form_input {
+    margin-top: 10px;
+  }
+
+  h2 {
+    margin: 5px auto;
+  }
+
+  .add_card_sbm_btn {
+    margin: 10px auto;
+  }
+
+  .closeBtnImg {
+    top: -170px;
+    right: -55px;
+  }
+}

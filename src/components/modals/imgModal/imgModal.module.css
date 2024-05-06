@@ -1,0 +1,71 @@
+.popup {
+  transition: 0.5s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: -1;
+}
+
+.popup_visible {
+  opacity: 1;
+  z-index: 1;
+}
+
+.popup_main {
+  background-color: none;
+  border-radius: 5px;
+  position: relative;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup_background {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.closeBtnImgBlock {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.closeBtnImg {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.closeBtnImg:hover {
+  opacity: 0.6;
+}
+
+.modalImg {
+  max-height: 75vh;
+  max-width: 75vw;
+}
+
+.imgName {
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+}

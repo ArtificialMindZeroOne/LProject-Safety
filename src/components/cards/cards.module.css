@@ -1,0 +1,123 @@
+.cardsBlock {
+  margin-bottom: 20px;
+  width: fit-content;
+  display: grid;
+  gap: 25px 5px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 282px);
+  grid-template-rows: repeat(2, 361px);
+  place-items: center;
+}
+
+.article {
+  height: 350px;
+  width: 250px;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.img {
+  width: 250px;
+  height: 282px;
+  cursor: pointer;
+}
+
+.articleTitleBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+.loaderBlock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.like {
+  background-image: url(../../../src/assets/group.svg);
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 0;
+  height: 19px;
+  transition: 0.5s ease-in-out;
+  width: 22px;
+  padding: 0;
+}
+
+.like_active {
+  background-image: url(../../../src/assets/group_active.svg);
+}
+
+.basket_delete {
+  background: transparent;
+  background-image: url(../../assets/basket-delete.svg);
+  border: 0;
+  cursor: pointer;
+  display: none;
+  height: 19px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  transition: 0.5s ease-in-out;
+  width: 18px;
+}
+
+.my_card {
+  display: block;
+}
+
+.basket_delete:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1160px) {
+  .cardsBlock {
+    grid-template-columns: repeat(3, 282px);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .cardsBlock {
+    grid-template-columns: repeat(2, 282px);
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .cardsBlock {
+    gap: 20px;
+    grid-template-columns: 282px;
+    grid-template-rows: repeat(6, 361px);
+    max-width: 282px;
+  }
+
+  .loaderBlock {
+    top: 70%;
+  }
+}
